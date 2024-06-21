@@ -26,6 +26,17 @@
     width: 100px;
 }
 
+.hbd_camera {
+    position: absolute;
+    left: -35px;
+    top: 35px;
+    z-index: -1;
+}
+
+.hbd_camera img {
+    width: 90px;
+}
+
 .hbd_img img {
     width: 250px;
     border-radius: 100%;
@@ -77,6 +88,15 @@
 
     .hbd_cloud img {
         width: 80px;
+    }
+
+    .hbd_camera {
+        left: -30px;
+        top: 40px;
+    }
+    
+    .hbd_camera img {
+        width: 70px;
     }
 
     .hbd_img img {
