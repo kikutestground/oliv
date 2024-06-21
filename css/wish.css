@@ -17,10 +17,28 @@
     text-shadow: 2px 2px 3px #000, 1px 1px 20px #fff;
 }
 
+.hbd_cloud {
+    position: absolute;
+    bottom: -45px;
+}
+
+.hbd_cloud img {
+    width: 100px;
+}
+
 .hbd_img img {
     width: 250px;
     border-radius: 100%;
     box-shadow: 2px 2px 3px #000, -2px -2px 3px #fff;
+}
+
+.hbd_ribbon {
+    position: absolute;
+    bottom: -28px;
+}
+
+.hbd_ribbon img {
+    width: 55px;
 }
 
 .floating_img img {
@@ -35,7 +53,8 @@
 
 .floating_2 img {
     right: 0;
-    bottom: 0;
+    top: 4rem;
+    z-index: 999;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -52,8 +71,24 @@
         font-size: large;
     }
 
+    .hbd_cloud {
+        bottom: -35px;
+    }
+
+    .hbd_cloud img {
+        width: 80px;
+    }
+
     .hbd_img img {
         width: 220px;
+    }
+
+    .hbd_ribbon {
+        bottom: -20px;
+    }
+
+    .hbd_ribbon img {
+        width: 35px;
     }
 
     .floating_img img {
