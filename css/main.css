@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "beautifulpeople";
+    src: url("../assets/fonts/beautifulpeople.ttf");
+}
+
+@font-face {
+    font-family: "tomatoes";
+    src: url("../assets/fonts/tomatoes.ttf");
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    margin: 0;
+    background-color: #ac3d3d;
+    color: #fff;
+    position: relative
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.container {
+    margin: 1rem 0 0 0;
+    position: relative
+}
