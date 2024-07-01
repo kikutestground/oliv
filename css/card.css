@@ -1,0 +1,188 @@
+.stickers {
+    position: absolute;
+    top: 0;
+    gap: 40rem;
+}
+
+.stickers .sticker_1 img{
+    width: 100px;
+    filter: brightness(0%);
+    transform: scaleX(-1);
+}
+
+.stickers .sticker_2 img{
+    width: 100px;
+    filter: brightness(0%);
+}
+
+.clip {
+    position: absolute;
+    z-index: 999;
+    top: -1.3rem;
+    left: 5rem;
+}
+
+.clip img {
+    width: 30px;
+    transform: rotate(-30deg);
+    filter: hue-rotate(305deg) saturate(250%);
+}
+
+.card_wrapper {
+    position: relative;
+    background-color: aliceblue;
+    height: 25rem;
+    width: 50rem;
+    margin-bottom: 8.4rem;
+    background-image: url("../assets/images/confetti_back.jpg");
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    top: -1.5rem;
+    background-color: rgb(219, 117, 117);
+    height: 20rem;
+    width: 45rem;
+    border: 4px dotted #fff;
+    border-radius: 15px;
+    rotate: 3deg;
+}
+
+.card_content_wrapper {
+    /* rotate: -3deg; */
+    gap: 10rem;
+}
+
+.card_img, .card_txt{
+    position: relative;
+    background-color: transparent;
+}
+
+.card_img {
+    height: 12rem;
+    width: 12rem;
+    border: 10px solid #fff;
+    border-bottom-width: 45px;
+}
+
+.card_txt {
+    height: 17rem;
+    width: 15rem;
+}
+
+.duct_tape {
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+    z-index: 999;
+}
+
+.duct_tape img {
+    width: 80px;
+}
+
+.pin {
+    position: absolute;
+    z-index: 999;
+    top: 1rem;
+}
+
+.pin img {
+    width: 50px;
+    filter: hue-rotate(310deg);
+}
+
+.polaroid_container {
+    position: relative;
+    max-width: 12rem;
+}
+
+.polaroid {
+    object-fit: contain;
+}
+
+/* Some positioning and ratios */
+.sticky-container {
+    max-width: 270px;
+    position: relative;
+}
+  
+.sticky-outer {
+    display: flex;
+    padding-top: 92.5925926%;
+    position: relative;
+    width: 100%;
+}
+  
+.sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+  
+/* Shadow behind the sticky note */
+.sticky:before {
+    box-shadow: -2px 2px 15px 0 rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
+    content: '';
+    width: 90%;
+    left: 5px;
+    height: 83%;
+    position: absolute;
+    top: 30%;
+}
+  
+/* The sticky note itself */
+.sticky-content {
+    background: linear-gradient(180deg, 
+                                rgb(253 253 165) 0%,
+                                rgb(255 250 144) 12%,
+                                rgb(242 253 93) 75%,
+                                rgb(255 251 64) 100%
+                            );
+    width: 100%;
+    height: 100%;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    font-size: 1rem;
+    clip-path: url(#stickyClip);
+}
+  
+/* Add responsiveness */
+@media screen and (min-width: 640px) {
+    .sticky:before {
+      height: 79%;
+      width: 90%;
+    }
+    .sticky-content {
+      font-size: 1.25rem;
+    }
+}
+  
+@media screen and (min-width: 768px) {
+    .sticky:before {
+      height: 75%;
+      width: 90%;
+    }
+    .sticky-content {
+      font-size: 1.5rem;
+    }
+}
+  
+@media screen and (min-width: 1024px) {
+    .sticky:before {
+      height: 73%;
+      width: 90%;
+    }
+    .sticky-content {
+      font-size: 1.875rem;
+    }
+}

@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/wish.css">
+    <link rel="stylesheet" href="./css/btn.css">
+    <link rel="stylesheet" href="./css/card.css">
+
 
     <title>Happy Birthday🎈</title>
 </head>
@@ -28,7 +31,7 @@
     </div>
 </header>
 
-<main class="flex flex-col">
+<main class="flex flex-col" style="position: relative;">
 
     <section id="wish" class="wish">
         <div class="container">
@@ -63,22 +66,76 @@
         </div>
     </section>
 
-    <button class="btn btn-scroll">
-        <a href="#wish2"><></a>
-    </button>
+    <div class="flex flex-row floating_btn">
+        <span class="start_btn prev">BACK</span>
+        <span class="start_btn start" style="display: inline-block;" onclick="scrollBottom()">START</span>
+        <span class="start_btn next" style="display: none;" onclick="">NEXT</span>
+    </div>
 
-    <section id="wish2" class="entry">
+    <section id="timeline" class="entry">
         <div class="container">
-            <div class="flex flex-col">
-                <div class="hbd_text">
-                    <h1>🎊Happy Birthday🎉</h1>
+            <div class="flex card_wrapper">
+                <div class="clip">
+                    <img src="./assets/images/paper_clip.png" alt="No clip">
                 </div>
-                <div class="hbd_img">
-                    <img src="./assets/images/head_img.png" alt="Morty Failed To Load" width="250px">
+                <div class="flex flex-row card">
+
+                    <div class="flex flex-row card_content_wrapper">
+
+                        <div class="flex flex-row card_img">
+
+                            <div class="duct_tape">
+                                <img src="./assets/images/duct_tape.png" alt="Tape lost">
+                            </div>
+
+                            <div class="flex flex-row polaroid_container">
+                                <div class="polaroid_1">
+                                    <!-- <img class="polaroid" src="./assets/images/polaroids/pol1.jpg" alt=""> -->
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="card_txt">
+
+                            <div class="flex flex-row sticky-container">
+                                <div class="pin">
+                                    <img src="./assets/images/pin.png" alt="Pin Broke">
+                                </div>
+                                <div class="sticky-outer">
+                                    <div class="sticky">
+                                        <svg width="0" height="0">
+                                        <defs>
+                                            <clipPath id="stickyClip" clipPathUnits="objectBoundingBox">
+                                            <path
+                                                d="M 0 0 Q 0 0.69, 0.03 0.96 0.03 0.96, 1 0.96 Q 0.96 0.69, 0.96 0 0.96 0, 0 0"
+                                                stroke-linejoin="round"
+                                                stroke-linecap="square"
+                                            />
+                                            </clipPath>
+                                        </defs>
+                                        </svg>
+                                        <div class="sticky-content">
+                                            Hello! I'm a<br>
+                                            sticky note!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="hbd_name">
-                    <h1>✨Olivia🐾</h1>
-                </div>    
+                <div class="flex flex-row stickers">
+                    <div class="sticker_1">
+                        <img src="./assets/images/sticker_1.png" alt="No Sticker">
+                    </div>
+                    <div class="sticker_2">
+                        <img src="./assets/images/sticker_2.png" alt="No Sticker">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -89,7 +146,8 @@
 
 </footer>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./scripts/main.js"></script>
+<script src="./scripts/scroll.js"></script>
 </body>
 </html>

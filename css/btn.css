@@ -1,0 +1,45 @@
+.floating_btn {
+    position: fixed;
+    bottom: 5rem;
+    width: 100%;
+}
+
+.floating_btn .prev {
+    position: absolute;
+    left: 8rem;
+    bottom: 2rem;
+}
+
+.floating_btn .start {
+    position: absolute;
+    right: 8rem;
+    bottom: 2rem;
+}
+
+.floating_btn .next {
+    position: absolute;
+    right: 8rem;
+    bottom: 2rem;
+}
+
+.start_btn{
+    text-align: center;
+	display: inline-block;
+	margin:5px;
+    font-family: start;
+    font-weight: bold;
+    font-size: 25pt;
+    padding: 10px 0 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+	border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+}
+
+.start_btn:active {
+	box-shadow: none;
+	position: absolute;
+	bottom: .8em;
+}

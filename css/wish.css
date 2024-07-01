@@ -11,6 +11,10 @@
     text-shadow: 2px 2px #000, 1px 1px 20px #fff;
 }
 
+.hbd_name {
+    margin-top: 15px;
+}
+
 .hbd_name h1 {
     font-family: tomatoes;
     font-size: x-large;
@@ -31,6 +35,7 @@
     left: -35px;
     top: 35px;
     z-index: -1;
+    animation: float infinite 2s;
 }
 
 .hbd_camera img {
@@ -50,22 +55,49 @@
 
 .hbd_ribbon img {
     width: 55px;
+    animation: wobble infinite 3s;
 }
 
 .floating_img img {
     position: fixed;
-    width: 350px;
+    width: 290px;
 }
 
 .floating_1 img {
-    left: 0;
-    bottom: 0;
+    left: 6rem;
+    top: 4rem;
+    z-index: 999;
 }
 
 .floating_2 img {
-    right: 0;
+    right: 6rem;
     top: 4rem;
     z-index: 999;
+}
+
+
+@keyframes float {
+    0%{
+        top: 35px;
+    }
+    50% {
+        top: 40px;
+    }
+    100% {
+        top: 35px;
+    }
+}
+
+@keyframes wobble {
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 15deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
