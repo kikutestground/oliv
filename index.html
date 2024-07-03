@@ -67,9 +67,10 @@
     </section>
 
     <div class="flex flex-row floating_btn">
-        <span class="start_btn prev">BACK</span>
+        <span class="start_btn prev" onclick="cycleBack()">BACK</span>
         <span class="start_btn start" style="display: inline-block;" onclick="scrollBottom()">START</span>
-        <span class="start_btn next" style="display: none;" onclick="">NEXT</span>
+        <span class="start_btn next" style="display: none;" onclick="cycleForward()">NEXT</span>
+        <span class="start_btn confetti" style="display: none;" onclick="">CELEBRATE</span>
     </div>
 
     <section id="timeline" class="entry">
@@ -89,8 +90,15 @@
                             </div>
 
                             <div class="flex flex-row polaroid_container">
-                                <div class="polaroid_1">
-                                    <!-- <img class="polaroid" src="./assets/images/polaroids/pol1.jpg" alt=""> -->
+                                <div class="flex flex-row polaroid_group">
+                                    <img id="pol1" class="polaroid" src="./assets/images/polaroids/pol1.jpg" alt="">
+                                    <img id="pol2" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol2.jpg" alt="">
+                                    <img id="pol3" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol3.jpg" alt="">
+                                    <img id="pol4" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol4.jpg" alt="">
+                                    <img id="pol5" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol5.jpg" alt="">
+                                    <img id="pol6" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol6.jpg" alt="">
+                                    <img id="pol7" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol7.jpg" alt="">
+                                    <img id="pol8" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol8.jpg" alt="">
                                 </div>
                             </div>
 
@@ -149,5 +157,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./scripts/main.js"></script>
 <script src="./scripts/scroll.js"></script>
+<script src="./scripts/carousel.js"></script>
 </body>
 </html>

@@ -1,43 +1,46 @@
-const carousel = document.getElementById('carouselExampleControls')
-const items = carousel.querySelectorAll('.carousel-item');
-let currentItem = 0;
-let isActive = true;
+let id = 1;
+ 
+function cycleForward() {
 
-function setCurrentItem(index) {
-  currentItem = (index + items.length) % items.length;
+    if(id < 8){
+        $(`#pol${id}`).css('display', 'none');
+        $(`#pol${id+1}`).css('display', 'block');
+        id++;
+    }
+    if(id === 8){
+        $('.next').css('display', 'none');
+        $('.start').css('display', 'none');
+        $('.confetti').css('display', 'inline-block');
+    }
+    disableAtLastPos();
 }
 
-function hideItem(direction) {
-  isActive = false;
-  items[currentItem].classList.add(direction);
-  items[currentItem].addEventListener('animationend', function() {
-    this.classList.remove('active', direction);
-  });
+function cycleBack() {
+    if(id === 8) {
+        $('.confetti').css('display', 'none');
+        $('.next').css('display', 'inline-block');
+    }
+    if(id > 1) {
+        $(`#pol${id}`).css('display', 'none');
+        $(`#pol${id-1}`).css('display', 'block');
+        id--;
+    }
+    disableAtLastPos();
 }
 
-function showItem(direction) {
-  items[currentItem].classList.add('next', direction);
-  items[currentItem].addEventListener('animationend', function() {
-    this.classList.remove('next', direction);
-    this.classList.add('active');
-    isActive = true;
-  });
+function disableAtLastPos() {
+    if(id === 8) {
+        $('.next').addClass("disable_btn");
+    }
+    else {
+        $('.next').removeClass("disable_btn");
+    }
+    if(id === 1) {
+        $('.prev').addClass("disable_btn");
+    }
+    else {
+        $('.prev').removeClass("disable_btn");
+    }
 }
 
-document.getElementById('carouselPrev').addEventListener('click', function(e) {
-  e.preventDefault()
-  if (isActive) {
-    hideItem('to-right');
-    setCurrentItem(currentItem - 1);
-    showItem('from-left');
-  }
-});
-
-document.getElementById('carouselNext').addEventListener('click', function(e) {
-  e.preventDefault()
-  if (isActive) {
-    hideItem('to-left');
-    setCurrentItem(currentItem + 1);
-    showItem('from-right');
-  }
-});
+disableAtLastPos();

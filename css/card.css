@@ -100,8 +100,17 @@
     max-width: 12rem;
 }
 
+.polaroid_group {
+    z-index: 998;
+    position: relative;
+    top: 3px;
+}
+
 .polaroid {
-    object-fit: contain;
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
 /* Some positioning and ratios */
