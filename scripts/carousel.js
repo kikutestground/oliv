@@ -5,6 +5,10 @@ function cycleForward() {
     if(id < 8){
         $(`#pol${id}`).css('display', 'none');
         $(`#pol${id+1}`).css('display', 'block');
+
+        $(`#par${id}`).css('display', 'none');
+        $(`#par${id+1}`).css('display', 'block');
+
         id++;
     }
     if(id === 8){
@@ -23,6 +27,9 @@ function cycleBack() {
     if(id > 1) {
         $(`#pol${id}`).css('display', 'none');
         $(`#pol${id-1}`).css('display', 'block');
+
+        $(`#par${id}`).css('display', 'none');
+        $(`#par${id-1}`).css('display', 'block');
         id--;
     }
     disableAtLastPos();
