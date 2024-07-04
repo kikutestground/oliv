@@ -4,6 +4,8 @@ function cycleForward() {
 
     if(id < 8){
         $(`#pol${id}`).css('display', 'none');
+        $(`#pol${id}`).css('display', 'none');
+        
         $(`#pol${id+1}`).css('display', 'block');
 
         $(`#par${id}`).css('display', 'none');
@@ -12,7 +14,7 @@ function cycleForward() {
         id++;
     }
     if(id === 8){
-        $('.next').css('display', 'none');
+        // $('.next').css('display', 'none');
         $('.start').css('display', 'none');
         $('.confetti').css('display', 'inline-block');
     }
@@ -21,7 +23,7 @@ function cycleForward() {
 
 function cycleBack() {
     if(id === 8) {
-        $('.confetti').css('display', 'none');
+        // $('.confetti').css('display', 'none');
         $('.next').css('display', 'inline-block');
     }
     if(id > 1) {

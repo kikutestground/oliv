@@ -53,7 +53,7 @@
 
 .card_content_wrapper {
     /* rotate: -3deg; */
-    gap: 10rem;
+    gap: 2rem;
 }
 
 .card_img, .card_txt{
@@ -84,6 +84,15 @@
     width: 80px;
 }
 
+.butterflies {
+    position: absolute;
+    z-index: 990;
+}
+
+.butterflies img {
+    width: 300px;
+}
+
 .pin {
     position: absolute;
     z-index: 999;
@@ -111,6 +120,17 @@
     width: 100%;
     height: auto;
     max-width: 100%;
+}
+
+.bow {
+    position: absolute;
+    z-index: 999;
+    top: 6rem;
+    left: 0;
+}
+
+.bow img {
+    width: 300px;
 }
 
 /* Some positioning and ratios */

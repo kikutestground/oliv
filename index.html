@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/wish.css">
     <link rel="stylesheet" href="./css/btn.css">
     <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/anim.css">
 
 
     <title>Happy Birthday🎈</title>
@@ -70,7 +72,7 @@
         <span class="start_btn prev" onclick="cycleBack()">BACK</span>
         <span class="start_btn start" style="display: inline-block;" onclick="scrollBottom()">START</span>
         <span class="start_btn next" style="display: none;" onclick="cycleForward()">NEXT</span>
-        <span class="start_btn confetti" style="display: none;" onclick="">CELEBRATE</span>
+        <span id="confetti" class="start_btn confetti" style="display: none;" onclick="">CELEBRATE</span>
     </div>
 
     <section id="timeline" class="entry">
@@ -89,6 +91,10 @@
                                 <img src="./assets/images/duct_tape.png" alt="Tape lost">
                             </div>
 
+                            <div class="butterflies">
+                                <img src="./assets/images/butterflies.png" alt="">
+                            </div>
+
                             <div class="flex flex-row polaroid_container">
                                 <div class="flex flex-row polaroid_group">
                                     <img id="pol1" class="polaroid" src="./assets/images/polaroids/pol1.jpg" alt="">
@@ -100,8 +106,19 @@
                                     <img id="pol7" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol7.jpg" alt="">
                                     <img id="pol8" class="polaroid" style="display: none;" src="./assets/images/polaroids/pol8.jpg" alt="">
                                 </div>
+                                <div class="bow">
+                                    <img src="./assets/images/bow.png" alt="">
+                                </div>
                             </div>
 
+                        </div>
+
+                        <div class="card_stickers">
+                            <div class="flex flex-col stickers_container">
+                                <img src="./assets/images/kitty1.png" alt="">
+                                <img src="./assets/images/kitty2.png" alt="">
+                                <img src="./assets/images/kitty3.png" alt="">
+                            </div>
                         </div>
 
                         <div class="card_txt">
@@ -166,5 +183,6 @@
 <script src="./scripts/main.js"></script>
 <script src="./scripts/scroll.js"></script>
 <script src="./scripts/carousel.js"></script>
+<script type="module" src="./scripts/confetti.js"></script>
 </body>
 </html>

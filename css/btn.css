@@ -24,8 +24,8 @@
 
 .floating_btn .confetti {
     position: absolute;
-    right: 1rem;
-    bottom: 2rem;
+    right: 37rem;
+    bottom: -3rem;
 }
 
 .start_btn{
@@ -48,6 +48,12 @@
 	box-shadow: none;
 	position: absolute;
 	bottom: .8em;
+}
+
+.confetti:active {
+    box-shadow: none;
+	position: absolute;
+	bottom: -1.6em;
 }
 
 .disable_btn {
