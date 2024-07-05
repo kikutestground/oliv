@@ -4,6 +4,12 @@
     width: 100%;
 }
 
+.floating_btn .scroll_up {
+    position: absolute;
+    left: 8rem;
+    bottom: 2rem;
+}
+
 .floating_btn .prev {
     position: absolute;
     left: 8rem;
@@ -23,9 +29,7 @@
 }
 
 .floating_btn .confetti {
-    position: absolute;
-    right: 37rem;
-    bottom: -3rem;
+    
 }
 
 .start_btn{
@@ -53,7 +57,7 @@
 .confetti:active {
     box-shadow: none;
 	position: absolute;
-	bottom: -1.6em;
+	bottom: -0.2em;
 }
 
 .disable_btn {

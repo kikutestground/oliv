@@ -70,7 +70,7 @@
 
 .card_txt {
     height: 17rem;
-    width: 15rem;
+    width: 16rem;
 }
 
 .duct_tape {
@@ -184,7 +184,39 @@
     font-size: 1rem;
     clip-path: url(#stickyClip);
 }
-  
+
+.sticky_group p {
+    font-size: 0.8rem;
+}
+
+#par2 {
+    font-size: 1.3rem;
+}
+
+#par3 {
+    font-size: 2.5rem;
+}
+
+#par4 {
+    font-size: 0.85rem;
+}
+
+#par5 {
+    font-size: 0.85rem;
+}
+
+#par6 {
+    font-size: 1.5rem;
+}
+
+#par7 {
+    font-size: 2rem;
+}
+
+#par8 {
+    font-size: 1rem;
+}
+
 /* Add responsiveness */
 @media screen and (min-width: 640px) {
     .sticky:before {

@@ -2,7 +2,7 @@ function scrollBottom() {
     window.scrollTo(0,document.body.scrollHeight);
     // bottomPage.style.display = 'none';
     // topPage.style.display = '';
-
+    $('.scroll_up').removeClass('disable_btn');
     hideStart();
     // setInterval('hideStart()', 500);
 }
@@ -24,8 +24,16 @@ function checkScrollPos() {
 
         $('.start').css('display', 'inline-block');
         $('.next').css('display', 'none');
+        $('.scroll_up').addClass('disable_btn');
         // $('.confetti').css('display', 'none');
     }
 }
 
 setInterval('checkScrollPos()', 100);
+
+function scrollToTop() {
+    if($(window).scrollTop != 0) {
+        $(window).scrollTop(0);
+        $('.scroll_up').addClass('disable_btn');
+    }
+}
