@@ -316,3 +316,110 @@
         height: 73%;
     }
 }
+
+@media (max-width: 845px) and (min-width: 601px) {
+
+    .card_content_wrapper {
+        gap: 1.2rem;
+    }
+
+    .card_wrapper {
+        height: 20rem;
+        width: 36rem;
+    }
+
+    .card {
+        height: 16rem;
+        width: 33rem;
+    }
+
+    .card_txt {
+        height: 14rem;
+        width: 13rem;
+    }
+
+    .sticky:before {
+        left: 6px;
+        height: 75%;
+    }
+
+    .stickers {
+        gap: 29rem;
+    }
+
+    .stickers .sticker_1 img {
+        width: 70px;
+    }
+
+    .stickers .sticker_2 img {
+        width: 70px;
+    }
+
+    .bow {
+        top: 7rem;
+        left: 4rem;
+    }
+
+    .bow img {
+        width: 170px;
+    }
+
+    .butterflies img {
+        width: 210px;
+    }
+
+    .duct_tape {
+        right: -1.2rem;
+        top: -1.2rem;
+    }
+
+    .duct_tape img {
+        width: 50px;
+    }
+
+    .clip {
+        top: -1.2rem;
+        left: 3rem;
+    }
+
+    .clip img {
+        width: 22px;
+    }
+
+    .card_img {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .sticky_group p {
+        font-size: 0.65rem;
+    }
+    
+    #par2 {
+        font-size: 1.2rem;
+    }
+    
+    #par3 {
+        font-size: 2.2rem;
+    }
+    
+    #par4 {
+        font-size: 0.783rem;
+    }
+    
+    #par5 {
+        font-size: 0.74rem;
+    }
+    
+    #par6 {
+        font-size: 1.2rem;
+    }
+    
+    #par7 {
+        font-size: 2.3rem;
+    }
+    
+    #par8 {
+        font-size: 0.8rem;
+    }
+}

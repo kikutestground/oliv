@@ -8,3 +8,9 @@
         width: 60px;
     }
 }
+
+@media (max-width: 845px) and (min-width: 601px) {
+    .stickers_container img {
+        width: 55px;
+    }
+}

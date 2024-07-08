@@ -165,6 +165,23 @@
         top: 0rem;
     }
 }
+
+@media (max-width: 845px) and (min-width: 601px) {
+    .floating_img img {
+        position: fixed;
+        width: 150px;
+    }
+
+    .floating_1 img {
+        left: 0rem;
+        top: 5rem;
+    }
+    
+    .floating_2 img {
+        right: 0rem;
+        top: 5rem;
+    }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {...}
 /* Medium devices (landscape tablets, 768px and up) */

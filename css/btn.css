@@ -99,3 +99,34 @@
         bottom: 3.5rem;
     }
 }
+
+@media (max-width: 845px) and (min-width: 601px) {
+
+    .floating_btn {
+        bottom: 2.4rem;
+    }
+
+    .start_btn {
+        font-size: 13pt;
+    }
+
+    .floating_btn .scroll_up {
+        left: 2rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .prev {
+        left: 2rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .start {
+        right: 2rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .next {
+        right: 2rem;
+        bottom: 2.5rem;
+    }
+}

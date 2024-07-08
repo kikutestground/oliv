@@ -28,7 +28,7 @@ body {
     background-position: center;
     background-size: contain;
     background-attachment: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 h1 {
@@ -70,5 +70,16 @@ a {
     body {
         overflow: visible;
     }
+}
 
+@media (max-width: 845px) and (min-width: 601px) {
+    body {
+        /* overflow: hidden; */
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 846px) {
+    body {
+        /* overflow: hidden; */
+    }
 }

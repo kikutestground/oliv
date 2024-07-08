@@ -10,3 +10,10 @@
         bottom: 3rem;
     }
 }
+
+@media (max-width: 845px) and (min-width: 601px) {
+    .footer_button {
+        margin-top: 2.5rem;
+        bottom: 1rem;
+    }
+}
