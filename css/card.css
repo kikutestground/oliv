@@ -4,13 +4,13 @@
     gap: 40rem;
 }
 
-.stickers .sticker_1 img{
+.stickers .sticker_1 img {
     width: 100px;
     filter: brightness(0%);
     transform: scaleX(-1);
 }
 
-.stickers .sticker_2 img{
+.stickers .sticker_2 img {
     width: 100px;
     filter: brightness(0%);
 }
@@ -245,5 +245,74 @@
     }
     .sticky-content {
       font-size: 1.875rem;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .card_content_wrapper {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .stickers_container {
+        flex-direction: row;
+    }
+
+    .card_wrapper {
+        width: 22rem;
+        height: 40rem;
+    }
+
+    .card {
+        width: 18rem;
+        height: 36rem;
+    }
+
+    .stickers {
+        gap: 14rem;
+    }
+
+    .stickers .sticker_1 img {
+        width: 70px;
+    }
+
+    .stickers .sticker_2 img {
+        width: 70px;
+    }
+
+    .bow {
+        top: 8rem;
+        left: 5rem;
+    }
+
+    .bow img {
+        width: 200px;
+    }
+
+    .butterflies img {
+        width: 280px;
+    }
+
+    .duct_tape {
+        right: -1rem;
+        top: -1rem;
+    }
+
+    .duct_tape img {
+        width: 45px;
+    }
+
+    .card_img {
+        height: 12rem;
+        width: 12rem;
+        border: 10px solid #fff;
+        border-bottom-width: 45px;
+    }
+
+    .sticky:before {
+        left: 6px;
+        height: 73%;
     }
 }

@@ -68,3 +68,34 @@
     bottom: 0.96em;
     box-shadow: 0 .2em gray; 
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .floating_btn {
+        bottom: 2rem;
+    }
+
+    .start_btn {
+        font-size: 8pt;
+    }
+
+    .floating_btn .scroll_up {
+        left: 2rem;
+        bottom: 3.5rem;
+    }
+    
+    .floating_btn .prev {
+        left: 2rem;
+        bottom: 3.5rem;
+    }
+    
+    .floating_btn .start {
+        right: 2rem;
+        bottom: 3.5rem;
+    }
+    
+    .floating_btn .next {
+        right: 2rem;
+        bottom: 3.5rem;
+    }
+}
