@@ -66,7 +66,7 @@
 
 .disable_btn:active {
     bottom: 0.96em;
-    box-shadow: 0 .2em gray; 
+    box-shadow: 0 0.2em gray; 
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -98,6 +98,23 @@
         right: 1rem;
         bottom: 3.5rem;
     }
+
+    .start_btn:active {
+        box-shadow: none;
+        position: absolute;
+        bottom: 4.9em;
+    }
+    
+    .confetti:active {
+        box-shadow: none;
+        position: absolute;
+        bottom: -0.2em;
+    }
+
+    .disable_btn:active {
+        bottom: 3.5rem;
+        box-shadow: 0 0.2em gray;
+    }
 }
 
 @media (max-width: 845px) and (min-width: 601px) {
@@ -128,6 +145,23 @@
     .floating_btn .next {
         right: 2rem;
         bottom: 2.5rem;
+    }
+
+    .start_btn:active {
+        box-shadow: none;
+        position: absolute;
+        bottom: 2.1em;
+    }
+    
+    .confetti:active {
+        box-shadow: none;
+        position: absolute;
+        bottom: -0.2em;
+    }
+
+    .disable_btn:active {
+        bottom: 2.5rem;
+        box-shadow: 0 0.2em gray;
     }
 }
 
