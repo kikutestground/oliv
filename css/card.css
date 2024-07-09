@@ -17,7 +17,7 @@
 
 .clip {
     position: absolute;
-    z-index: 999;
+    z-index: 997;
     top: -1.3rem;
     left: 5rem;
 }
@@ -160,7 +160,7 @@
     background-color: rgba(0, 0, 0, 0.25);
     content: '';
     width: 90%;
-    left: 5px;
+    left: 10px;
     height: 83%;
     position: absolute;
     top: 30%;
@@ -261,13 +261,13 @@
     }
 
     .card_wrapper {
-        width: 22rem;
-        height: 40rem;
+        width: 20rem;
+        height: 35rem;
     }
 
     .card {
-        width: 18rem;
-        height: 36rem;
+        width: 17rem;
+        height: 31rem;
     }
 
     .stickers {
@@ -275,29 +275,42 @@
     }
 
     .stickers .sticker_1 img {
-        width: 70px;
+        width: 60px;
     }
 
     .stickers .sticker_2 img {
-        width: 70px;
+        width: 60px;
+    }
+
+    .clip {
+        top: -0.6rem;
+        left: 4.5rem;
+    }
+
+    .clip img {
+        width: 18px;
     }
 
     .bow {
-        top: 8rem;
-        left: 5rem;
+        top: 7rem;
+        left: 4rem;
     }
 
     .bow img {
-        width: 200px;
+        width: 155px;
     }
 
     .butterflies img {
-        width: 280px;
+        width: 215px;
+    }
+
+    .pin img {
+        width: 30px;
     }
 
     .duct_tape {
-        right: -1rem;
-        top: -1rem;
+        right: -1.2rem;
+        top: -1.2rem;
     }
 
     .duct_tape img {
@@ -305,15 +318,50 @@
     }
 
     .card_img {
-        height: 12rem;
-        width: 12rem;
-        border: 10px solid #fff;
-        border-bottom-width: 45px;
+        height: 10rem;
+        width: 10rem;
     }
 
     .sticky:before {
         left: 6px;
         height: 73%;
+    }
+
+    .card_txt {
+        height: 12rem;
+        width: 12rem;
+    }
+
+    .sticky_group p {
+        font-size: 0.6rem;
+    }
+    
+    #par2 {
+        font-size: 1.1rem;
+    }
+    
+    #par3 {
+        font-size: 2rem;
+    }
+    
+    #par4 {
+        font-size: 0.723rem;
+    }
+    
+    #par5 {
+        font-size: 0.68rem;
+    }
+    
+    #par6 {
+        font-size: 1rem;
+    }
+    
+    #par7 {
+        font-size: 2rem;
+    }
+    
+    #par8 {
+        font-size: 0.73rem;
     }
 }
 
@@ -339,7 +387,7 @@
     }
 
     .sticky:before {
-        left: 6px;
+        left: 7px;
         height: 75%;
     }
 
@@ -391,6 +439,10 @@
         width: 10rem;
     }
 
+    .pin img {
+        width: 35px;
+    }
+
     .sticky_group p {
         font-size: 0.65rem;
     }
@@ -421,5 +473,107 @@
     
     #par8 {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 846px) {
+    .stickers {
+        gap: 35rem;
+    }
+
+    .stickers .sticker_1 img {
+        width: 85px;
+    }
+
+    .stickers .sticker_2 img {
+        width: 85px;
+    }
+
+    .card_wrapper {
+        height: 21rem;
+        width: 45rem;
+    }
+
+    .card {
+        height: 18rem;
+        width: 40rem;
+        top: -0.5rem;
+    }
+
+    .card_img {
+        height: 11rem;
+        width: 11rem;
+    }
+
+    .bow {
+        top: 7rem;
+        left: 4rem;
+    }
+
+    .bow img {
+        width: 190px;
+    }
+
+    .clip {
+        top: -1rem;
+        left: 4rem;
+    }
+
+    .clip img {
+        width: 25px;
+    }
+
+    .butterflies img {
+        width: 250px;
+    }
+
+    .duct_tape {
+        right: -1.2rem;
+        top: -1.2rem;
+    }
+
+    .duct_tape img {
+        width: 55px;
+    }
+
+    .pin img {
+        width: 40px;
+    }
+
+    .card_txt {
+        height: 15rem;
+        width: 14rem;
+    }
+
+    .sticky_group p {
+        font-size: 0.72rem;
+    }
+    
+    #par2 {
+        font-size: 1.25rem;
+    }
+    
+    #par3 {
+        font-size: 2.35rem;
+    }
+    
+    #par4 {
+        font-size: 0.844rem;
+    }
+    
+    #par5 {
+        font-size: 0.8rem;
+    }
+    
+    #par6 {
+        font-size: 1.3rem;
+    }
+    
+    #par7 {
+        font-size: 2.5rem;
+    }
+    
+    #par8 {
+        font-size: 0.85rem;
     }
 }

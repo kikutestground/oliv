@@ -80,22 +80,22 @@
     }
 
     .floating_btn .scroll_up {
-        left: 2rem;
+        left: 1rem;
         bottom: 3.5rem;
     }
     
     .floating_btn .prev {
-        left: 2rem;
+        left: 1rem;
         bottom: 3.5rem;
     }
     
     .floating_btn .start {
-        right: 2rem;
+        right: 1rem;
         bottom: 3.5rem;
     }
     
     .floating_btn .next {
-        right: 2rem;
+        right: 1rem;
         bottom: 3.5rem;
     }
 }
@@ -127,6 +127,36 @@
     
     .floating_btn .next {
         right: 2rem;
+        bottom: 2.5rem;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 846px) {
+    .floating_btn {
+        bottom: 2rem;
+    }
+
+    .start_btn {
+        font-size: 17pt;
+    }
+
+    .floating_btn .scroll_up {
+        left: 3rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .prev {
+        left: 3rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .start {
+        right: 3rem;
+        bottom: 2.5rem;
+    }
+    
+    .floating_btn .next {
+        right: 3rem;
         bottom: 2.5rem;
     }
 }

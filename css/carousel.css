@@ -5,12 +5,18 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .stickers_container img {
-        width: 60px;
+        width: 45px;
     }
 }
 
 @media (max-width: 845px) and (min-width: 601px) {
     .stickers_container img {
         width: 55px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 846px) {
+    .stickers_container img {
+        width: 65px;
     }
 }
